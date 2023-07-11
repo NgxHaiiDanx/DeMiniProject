@@ -21,14 +21,19 @@ ORDER BY count(1) desc
 
 LIMIT 10;
 
-3. How many new bike rentals on 2019-05-16 and the running totals until that day of each
-from_station?
+2. How many new bike rentals on 2019-05-16 and the running totals until that day of each from_station?
+
 **New bike rentals on 2019-05-16:**
+
 SELECT count(1)
+
 FROM trips
+
 WHERE  start_time = '2019-05-16'
 
+
 **--the running totals until 2019-05-16 of each from_station?**
+
 SELECT
     from_station_name,
     COUNT(1) AS new_rentals,
