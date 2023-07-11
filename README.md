@@ -4,6 +4,12 @@ SET UP AIRFLOW, POSTGRES and MONGODB local
 
 run docker compose up
 
+**AIRFLOW UI Sign in: **
+
+username: airflow
+
+password: airflow
+
 To acheive 1a, run ingest_uri_publish_jdbc DAG
 
 To acheive 1b, run ingest_uri_publish_mongodb
