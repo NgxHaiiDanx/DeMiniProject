@@ -10,6 +10,7 @@ To acheive 1b, run ingest_uri_publish_mongodb
 
 SQL query for 2:
 1. Top 10 from_station, to_station has the most bike rentals:
+
 SELECT from_station_name, to_station_name
 
 FROM trips
