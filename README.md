@@ -11,12 +11,16 @@ To acheive 1b, run ingest_uri_publish_mongodb
 SQL query for 2:
 1. Top 10 from_station, to_station has the most bike rentals:
 SELECT from_station_name, to_station_name
+
 FROM trips
+
 GROUP BY 1, 2
+
 ORDER BY count(1) desc
+
 LIMIT 10;
 
-2. How many new bike rentals on 2019-05-16 and the running totals until that day of each
+3. How many new bike rentals on 2019-05-16 and the running totals until that day of each
 from_station?
 **New bike rentals on 2019-05-16:**
 SELECT count(1)
