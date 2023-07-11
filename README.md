@@ -34,8 +34,7 @@ WHERE  start_time = '2019-05-16'
 
 **--the running totals until 2019-05-16 of each from_station?**
 
-SELECT
-    from_station_name,
+SELECT from_station_name,
     COUNT(1) AS new_rentals,
     SUM(COUNT(1)) OVER (ORDER BY start_time::date ROWS BETWEEN UNBOUNDED PRECEDING AND CURRENT ROW) AS running_total
 FROM
