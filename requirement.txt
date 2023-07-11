@@ -1,0 +1,6 @@
+requests
+pandas
+apache-airflow
+zipfile36
+psycopg2
+pymongo
