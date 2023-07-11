@@ -35,7 +35,7 @@ GROUP BY
 ORDER BY
     from_station_name
 
-4. Calculate Day-over-Day (DoD), Month-over-Month (MoM) of bike rentals
+3. Calculate Day-over-Day (DoD), Month-over-Month (MoM) of bike rentals
 
 **-- day over day**
 SELECT
